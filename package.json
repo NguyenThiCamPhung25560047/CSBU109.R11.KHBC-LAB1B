@@ -1,0 +1,19 @@
+{
+  "name": "csbu109.r11.khbc-lab1b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "mongoose": "^9.10.3",
+    "mysql2": "^3.24.5",
+    "xml2js": "^0.6.2"
+  }
+}
