@@ -52,7 +52,7 @@ async function main() {
       (5, 'Desk Lamp', 150000.00, 35),
       (5, 'Coffee Mug', 45000.00, 80);`);
     
-    console.log('--- Đã khởi tạo Database và dữ liệu mẫu thành công ---');
+    console.log('--- Database and sample data initialized successfully ---');
 
     console.log('\n=== QUESTION 1 ===');
     const [q1] = await pool.execute('SELECT * FROM items WHERE price >= 500000 AND quantity > 0 ORDER BY price DESC');
@@ -76,7 +76,7 @@ async function main() {
     console.log(q4);
 
   } catch (err) {
-    console.error('Lỗi MySQL:', err.message);
+    console.error('MySQL Error:', err.message);
   } finally {
     await pool.end();
   }
